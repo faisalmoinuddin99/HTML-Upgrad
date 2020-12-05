@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: 2px solid red;
+        width: 300px;
+        height: 10vh;
+        margin: 0 auto;
+      }
+      #para {
+        text-align: center;
+        padding: 20px;
+      }
+      .inside-box,
+      .outside-box {
+        border: 2px solid yellowgreen;
+        padding: 20px;
+        width: 300px;
+      }
+      /* .outside-box {
+        border: 2px solid green;
+      } */
+      .outline1 {
+        background: green;
+        color: white;
+        margin: 30px;
+        border: 1px solid black;
+        outline: 1px solid red;
+        outline-offset: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p id="para">This is a paragraph</p>
+    </div>
+
+    <div class="outside-box">
+      <div class="inside-box">This is a paragraph.</div>
+    </div>
+    <div class="outline1"></div>
+  </body>
+</html>
